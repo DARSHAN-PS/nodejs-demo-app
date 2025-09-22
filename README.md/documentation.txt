@@ -1,0 +1,24 @@
+
+
+# Task Overview
+
+Objective:
+Automate code deployment using a CI/CD pipeline to build and deploy a sample Node.js web application.
+
+Tools Used
+- Node.js
+- Docker
+- GitHub Actions
+- DockerHub
+
+
+
+# Project Structure
+github/
+   workflows/
+     main.yml 
+       Dockerfile 
+         package.json 
+           index.js / server.js 
+             README.md /documentation
+
