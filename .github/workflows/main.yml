@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-web-app:latest .
+        run: docker build --progress=plain -t ${{ secrets.DOCKERHUB_USERNAME }}/my-web-app:latest .
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-web-app:latest
